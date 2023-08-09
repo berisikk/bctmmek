@@ -68,23 +68,17 @@ async def nearest_dc(client: Client, message: Message):
     )
 
 
-@Client.on_message(
-    filters.command("Cpink", [""]) & filters.user(DEVS) & ~filters.me
-)
+@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("ping", cmd) & filters.me)
 async def pingme(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await message.reply_text(
-        f"❏ **Pong !!**\n"
-        f"**├• ** `%sms`\n"
-        f"╰•** ᴅᴀᴊᴊᴀʟ :** {client.me.mention}" % (duration)
-    )
+    await message.reply(f"❏Pong!! <code>{duration}</code>\n╰•Uptime  <code>{uptime}</code>")
 
 
-@Client.on_message(filters.command("Cping", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("Cpink", [""]) & filters.user(DEVS) & ~filters.me)
 @Client.on_message(filters.command("pink", cmd) & filters.me)
 async def pink(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
