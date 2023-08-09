@@ -16,6 +16,22 @@
       "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/UputtSupport » Lalu ketik #string",
       "required": true
     },
+    "STRING_SESSION2": {
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/UputtSupport » Lalu ketik #string",
+      "required": true
+    },
+    "STRING_SESSION3": {
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/UputtSupport » Lalu ketik #string",
+      "required": true
+    },
+    "STRING_SESSION4": {
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/UputtSupport » Lalu ketik #string",
+      "required": true
+    },
+    "STRING_SESSION5": {
+      "description": "Dapatkan String Session Pyrogram di Grup » https://t.me/UputtSupport » Lalu ketik #string",
+      "required": true
+    },
     "HEROKU_API_KEY": {
       "description": "Ambil Heroku API KEY mu disini » https://dashboard.heroku.com/account",
       "required": false
