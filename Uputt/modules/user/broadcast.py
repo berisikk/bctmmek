@@ -31,7 +31,7 @@ while 0 < 6:
     if _GCAST_BLACKLIST.status_code != 200:
         if 0 != 5:
             continue
-        GCAST_BLACKLIST = [-1001608701614, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001001675459127, -1001864253073, -1001001951726069, -1001565255751]
+        GCAST_BLACKLIST = [-1001608701614, -1001473548283, -1001982790377, -1001812143750, -1001692751821 -1001390552926, -1001675459127, -1001864253073, -1001951726069, -1001451642443, -1001565255751]
     GCAST_BLACKLIST = _GCAST_BLACKLIST.json()
     break
 
@@ -66,7 +66,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**✅Berhasil Terkirim:** `{done}` \n **❌Gagal Mengirim Pesan Ke** `{error}`"
+        f"**✅Berhasil Terkirim:** `{done}` \n**❌Gagal Mengirim Pesan Ke:** `{error}`"
     )
 
 
