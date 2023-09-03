@@ -45,7 +45,7 @@ async def absen(_, message: Message):
 async def sayang(_, message: Message):
     await message.reply("**Iyaaa sayanggg kenapaa?🥰**")
 
-@Client.on_message(filters.command("Anara", [""]) & filters.user(DEVS) & ~filters.me)
+@Client.on_message(filters.command("uvuveveoasas", [""]) & filters.user(DEVS) & ~filters.me)
 async def anara(_, message: Message):
     await message.reply("**Punyaa Uputtt😘**")
 
